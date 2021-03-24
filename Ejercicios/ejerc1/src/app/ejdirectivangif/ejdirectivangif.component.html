@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Cual es la capital de españa?</h3>
+    <input type="text" class="form-control" [(ngModel)]="capital">
+    <p *ngIf="!capital; else correcto">Complete la pregunta</p>
+    <ng-template #correcto>
+        <h4 *ngIf="setResultado()" ; else incorrecto>Correcto!</h4>
+    </ng-template>
+    <ng-template #incorrecto>
+        <h4>Lo siento, intente de nuevo</h4>
+    </ng-template>
+</div>

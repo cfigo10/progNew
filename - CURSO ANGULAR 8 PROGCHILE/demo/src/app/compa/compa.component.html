@@ -1,0 +1,11 @@
+<h1>One Way Binding</h1>
+
+<input type="text" (keyup)="recibirEvento($event)">
+
+<p>Tu nombre es : {{ nombre }} </p>
+
+<h1>Two Way Binding</h1>
+
+<input type="text" [(ngModel)]="apellido">
+
+<p>Tu apellido es: {{ apellido }} </p>

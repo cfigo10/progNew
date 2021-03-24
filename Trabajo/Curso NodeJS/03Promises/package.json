@@ -1,0 +1,27 @@
+{
+  "name": "promises",
+  "version": "0.0.1",
+  "description": "En este ejercicio aprenderemos a implementar Promesas en Node",
+  "main": "callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfigo10/prog.git"
+  },
+  "keywords": [
+    "callbacks",
+    "promises",
+    "q"
+  ],
+  "author": "Carlos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfigo10/prog/issues"
+  },
+  "homepage": "https://github.com/cfigo10/prog#readme",
+  "dependencies": {
+    "q": "^1.5.1"
+  }
+}

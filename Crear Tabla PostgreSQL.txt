@@ -1,0 +1,27 @@
+CREATE TABLE public.inventory (
+piso int4 NULL,	
+id int4 NULL,
+"user" varchar(40) NOT NULL,
+device_name varchar(30) NULL,
+os varchar(30) NULL,
+serie int4 NOT NULL,	
+device_id varchar(20) NOT NULL,		
+device_type varchar(30) NULL,	
+brand varchar(30) NULL,
+model varchar(30) NULL,
+serial_num varchar(50) NULL,	
+service_tag varchar(50) NULL,
+service_code varchar(50) NULL,	
+mac_address varchar(50) NULL,	
+details varchar(100) NULL,	
+CONSTRAINT inventory_pk PRIMARY KEY (serie)
+);
+
+-- Permissions
+
+ALTER TABLE public.inventory OWNER TO inventario_cl_app;
+GRANT ALL ON TABLE public.inventory TO inventario_cl_app;	
+	
+	
+	
+	

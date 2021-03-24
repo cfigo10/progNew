@@ -1,0 +1,15 @@
+ng new proyecto //crear proyecto
+
+ng g c comp //creacion de componentes
+
+ng g c comp -is --skipTest
+
+ng serve -o //levantar proyectos
+
+ng g m components/components --routing true -m=app (enlaza el modulo y el routing con el padre)--flat //se crean modulos con rutas individuales (flat es para que los cree sin la carpeta)
+
+npm install -g firebase-tools
+
+firebase login
+firebase init
+firebase deploy

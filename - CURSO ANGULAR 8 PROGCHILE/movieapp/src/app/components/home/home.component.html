@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <select class="pull-right" [(ngModel)]="viewCount" (ngModelChange)="changeViewMovie();"></select>
+        <option value="5">5</option>
+        <option value="9">9</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </div>
+</div>
+<div>
+    <div>
+        <strong>Uppss!!</strong> {{message}}
+        <button>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <button type="button" class="btn btn-default btn-sm" [routerLink]="['/home']">Populares</button>
+    <button type="button" class="btn btn-default btn-sm" [routerLink]="['/home/G']">Niños</button>
+    <button type="button" class="btn btn-default btn-sm" [routerLink]="['/home/now']">En Teatros</button>
+</div>
+<div>
+    < </div>

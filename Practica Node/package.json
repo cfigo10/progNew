@@ -1,0 +1,23 @@
+{
+    "name": "uploader",
+    "version": "0.0.1",
+    "description": "Aplicacion para subir archivos con Node.js al servidor",
+    "main": "uploader.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "supervisor uploader.js"
+    },
+    "keywords": [
+        "upload",
+        "files",
+        "node.js",
+        "formidable",
+        "fs-extra"
+    ],
+    "author": "Carlos",
+    "license": "MIT",
+    "dependencies": {
+        "formidable": "^1.2.1",
+        "fs-extra": "^8.1.0"
+    }
+}

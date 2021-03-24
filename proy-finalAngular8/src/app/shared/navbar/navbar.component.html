@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <img class="digimon-logo" src="../../../assets/logo.4.png">
+        </ul>
+        <!-- <a class="navbar-brand">Digimon App</a> -->
+        <!-- <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul> -->
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="filter-component">
+                <mat-label class="filter" style="color: white">Filtrar por Nivel:</mat-label>
+                <mat-form-field class="form-field">
+                    <mat-select [(ngModel)]="currentLevel" (ngModelChange)="onLevelSelected()" *ngIf="levels">
+                        <mat-option>Ninguna</mat-option>
+                        <mat-option *ngFor="let level of levels" [value]="level">
+                            {{ level }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </li>
+
+            <li class="search-box" style="padding-top: 17px;">
+                <input matInput class="search-input" type="text" [(ngModel)]="search" (ngModelChange)="searchEvent($event)" placeholder="Busca Digimon por nombre o id..." />
+                <button mat-button class="close-button" *ngIf="search" matSuffix mat-icon-button aria-label="Clear" (click)="searchEvent('')">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
